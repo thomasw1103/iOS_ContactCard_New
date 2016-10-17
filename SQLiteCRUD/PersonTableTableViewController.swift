@@ -42,7 +42,7 @@ class PersonTableTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+    }//beleg?
 
     // MARK: - Table view data source
 
