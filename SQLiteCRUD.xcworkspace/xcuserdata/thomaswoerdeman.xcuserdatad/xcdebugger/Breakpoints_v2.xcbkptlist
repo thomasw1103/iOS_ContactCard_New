@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SQLiteCRUD/JSONHelper.swift"
+            timestampString = "498384809.35379"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "fetchContacts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SQLiteCRUD/PersonTableTableViewController.swift"
+            timestampString = "498382730.609779"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "refresh(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SQLiteCRUD/PersonTableTableViewController.swift"
+            timestampString = "498382832.762448"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "refresh(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SQLiteCRUD/JSONHelper.swift"
+            timestampString = "498384786.512689"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "fetchContacts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SQLiteCRUD.JSONHelper.(fetchContacts () -&gt; ()).(closure #1)"
+                  moduleName = "SQLiteCRUD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thomaswoerdeman/Documents/iOS_ContactCard_New/SQLiteCRUD/JSONHelper.swift"
+                  timestampString = "498385230.640675"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "6004">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SQLiteCRUD.JSONHelper.(fetchContacts () -&gt; ()).(closure #1)"
+                  moduleName = "SQLiteCRUD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thomaswoerdeman/Documents/iOS_ContactCard_New/SQLiteCRUD/JSONHelper.swift"
+                  timestampString = "498385230.649248"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "7010">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SQLiteCRUD/JSONHelper.swift"
+            timestampString = "498384924.693409"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetchContacts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SQLiteCRUD.JSONHelper.(fetchContacts () -&gt; ()).(closure #1)"
+                  moduleName = "SQLiteCRUD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thomaswoerdeman/Documents/iOS_ContactCard_New/SQLiteCRUD/JSONHelper.swift"
+                  timestampString = "498384993.212148"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SQLiteCRUD.JSONHelper.(fetchContacts () -&gt; ()).(closure #1)"
+                  moduleName = "SQLiteCRUD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thomaswoerdeman/Documents/iOS_ContactCard_New/SQLiteCRUD/JSONHelper.swift"
+                  timestampString = "498384993.220949"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "585">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SQLiteCRUD/JSONHelper.swift"
+            timestampString = "498385133.393571"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchContacts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SQLiteCRUD.JSONHelper.fetchContacts () -&gt; ()"
+                  moduleName = "SQLiteCRUD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thomaswoerdeman/Documents/iOS_ContactCard_New/SQLiteCRUD/JSONHelper.swift"
+                  timestampString = "498385230.664462"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "246">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SQLiteCRUD.JSONHelper.(fetchContacts () -&gt; ()).(closure #1)"
+                  moduleName = "SQLiteCRUD"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thomaswoerdeman/Documents/iOS_ContactCard_New/SQLiteCRUD/JSONHelper.swift"
+                  timestampString = "498385230.67299"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
