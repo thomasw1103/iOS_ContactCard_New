@@ -29,9 +29,6 @@ class DetailViewController: UIViewController {
         self.lastNameLabel.textAlignment = .center
         self.navigationController?.navigationBar.isTranslucent = false
         
-        
-        
-        
         let url = NSURL(string: (person?.imageURL)!)
         let data = NSData(contentsOf:url! as URL)
         if data != nil {

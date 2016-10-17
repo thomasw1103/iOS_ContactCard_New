@@ -97,13 +97,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jwY-3a-XkM" firstAttribute="centerX" secondItem="R6f-2k-Rpg" secondAttribute="centerX" id="51v-nh-7Ul"/>
+                            <constraint firstItem="JHg-72-QXG" firstAttribute="top" secondItem="R6f-2k-Rpg" secondAttribute="top" id="IhZ-ue-Ofp"/>
                             <constraint firstItem="TuJ-qq-3sj" firstAttribute="centerX" secondItem="R6f-2k-Rpg" secondAttribute="centerX" id="NmR-8N-JKy"/>
                             <constraint firstItem="DBx-zU-grb" firstAttribute="centerX" secondItem="R6f-2k-Rpg" secondAttribute="centerX" id="O2r-hb-sRA"/>
                             <constraint firstItem="jwY-3a-XkM" firstAttribute="top" secondItem="TuJ-qq-3sj" secondAttribute="bottom" constant="30" id="Uen-QC-cjN"/>
                             <constraint firstAttribute="trailing" secondItem="JHg-72-QXG" secondAttribute="trailing" id="dwB-rl-TPp"/>
                             <constraint firstItem="TuJ-qq-3sj" firstAttribute="top" secondItem="Gpx-Xb-eRm" secondAttribute="bottom" constant="100" id="gFJ-Mx-5CJ"/>
                             <constraint firstItem="JHg-72-QXG" firstAttribute="leading" secondItem="R6f-2k-Rpg" secondAttribute="leading" id="gmf-kg-Zp9"/>
-                            <constraint firstItem="JHg-72-QXG" firstAttribute="top" secondItem="R6f-2k-Rpg" secondAttribute="top" id="kGj-wc-B1B"/>
                             <constraint firstItem="DBx-zU-grb" firstAttribute="top" secondItem="jwY-3a-XkM" secondAttribute="bottom" constant="20" id="z0i-fI-k2w"/>
                         </constraints>
                     </view>

@@ -18,8 +18,9 @@ class PersonTableTableViewController: UITableViewController {
         persons = DataBaseHelper.sharedInstance.read()
         
         // Reload the tableview
-        self.tableView.reloadData()
-        
+        DispatchQueue.main.async{
+            self.tableView.reloadData()
+        }
         // End the refresh
         sender.endRefreshing()
     }
