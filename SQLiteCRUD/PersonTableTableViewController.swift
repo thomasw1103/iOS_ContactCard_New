@@ -27,7 +27,6 @@ class PersonTableTableViewController: UITableViewController {
         // End the refresh
         sender.endRefreshing()
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
