@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B6E758D31DB37045003CC163 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E758D21DB37044003CC163 /* DetailViewController.swift */; };
 		B6E758D81DB37423003CC163 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E758D71DB37423003CC163 /* Person.swift */; };
+		B769114D1DB4D91E00FBA8BC /* New-York-City-Skyline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B769114C1DB4D91E00FBA8BC /* New-York-City-Skyline.jpg */; };
 		B7B34DF71DB4B485009354B4 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B34DF61DB4B485009354B4 /* JSONHelper.swift */; };
 		C75699B61DA67714003AE7FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75699B51DA67714003AE7FC /* AppDelegate.swift */; };
 		C75699BB1DA67714003AE7FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75699B91DA67714003AE7FC /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		862F6B5F13B6C60D6FCE7024 /* Pods-SQLiteCRUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLiteCRUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQLiteCRUD/Pods-SQLiteCRUD.debug.xcconfig"; sourceTree = "<group>"; };
 		B6E758D21DB37044003CC163 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B6E758D71DB37423003CC163 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B769114C1DB4D91E00FBA8BC /* New-York-City-Skyline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "New-York-City-Skyline.jpg"; path = "../../../Desktop/New-York-City-Skyline.jpg"; sourceTree = "<group>"; };
 		B7B34DF61DB4B485009354B4 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		C75699B21DA67714003AE7FC /* SQLiteCRUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteCRUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75699B51DA67714003AE7FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		C75699B41DA67714003AE7FC /* SQLiteCRUD */ = {
 			isa = PBXGroup;
 			children = (
+				B769114C1DB4D91E00FBA8BC /* New-York-City-Skyline.jpg */,
 				B6E758D61DB373FD003CC163 /* helpers */,
 				B6E758D51DB373E3003CC163 /* controllers */,
 				B6E758D41DB373D6003CC163 /* models */,
@@ -200,6 +203,7 @@
 				C75699C01DA67714003AE7FC /* LaunchScreen.storyboard in Resources */,
 				C75699BD1DA67714003AE7FC /* Assets.xcassets in Resources */,
 				C75699BB1DA67714003AE7FC /* Main.storyboard in Resources */,
+				B769114D1DB4D91E00FBA8BC /* New-York-City-Skyline.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

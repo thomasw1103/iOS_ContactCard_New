@@ -46,8 +46,14 @@ class JSONHelper {
                             print(lastName);
                             
                         }
+                        if let picture = field["picture"] as? [String : AnyObject]{
+                            if let imageURL = picture["large"] as? String{
+                                person?.imageURL = imageURL;
+                                print(imageURL);
+                            }
+                        }
                     }
-                databaseHelperInstance.create(firstname: (person?.firstName)!, lastname: (person?.lastName)!)
+                    databaseHelperInstance.create(firstname: (person?.firstName)!, lastname: (person?.lastName)!,image: (person?.imageURL)!)
                 }
             }
         }

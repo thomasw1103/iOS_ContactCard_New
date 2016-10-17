@@ -13,10 +13,31 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var lastNameLabel: UILabel!
+    @IBOutlet weak var personPhotoImageView: UIImageView!
+    @IBOutlet weak var backgroundImageView: UIImageView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //self.personPhotoImageView.layer.borderWidth = 2
+        self.personPhotoImageView.layer.borderColor = UIColor.white.cgColor
+        self.backgroundImageView.layer.borderColor = UIColor.white.cgColor
+        self.personPhotoImageView.layer.cornerRadius = 150 / 2
+        self.personPhotoImageView.layer.masksToBounds = false
+        self.personPhotoImageView.clipsToBounds = true
+        self.firstNameLabel.textAlignment = .center
+        self.lastNameLabel.textAlignment = .center
+        self.navigationController?.navigationBar.isTranslucent = false
+        
+        
+        
+        
+        let url = NSURL(string: (person?.imageURL)!)
+        let data = NSData(contentsOf:url! as URL)
+        if data != nil {
+            personPhotoImageView.image = UIImage(data:data! as Data)
+        }
+        
         firstNameLabel.text = person?.firstName
         lastNameLabel.text = person?.lastName
     }

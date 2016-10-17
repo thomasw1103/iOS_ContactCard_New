@@ -17,16 +17,13 @@ class PersonTableTableViewController: UITableViewController {
         
         persons = DataBaseHelper.sharedInstance.read()
         
-        // Generate Joe Doe with random number ...
-//        let randomNum:UInt32 = 100 + arc4random_uniform(200) // range is 0 to 99
-//        database.create(firstname: "John", lastname: "Doe_" + String(randomNum));
-//        
         // Reload the tableview
         self.tableView.reloadData()
         
         // End the refresh
         sender.endRefreshing()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -60,7 +57,7 @@ class PersonTableTableViewController: UITableViewController {
 
         // Configure the cell...
         persons = DataBaseHelper.sharedInstance.read()
-        cell.textLabel?.text = persons[indexPath.row].firstName;
+        cell.textLabel?.text = persons[indexPath.row].firstName! + " " + persons[indexPath.row].lastName!;
 
         return cell
     }
