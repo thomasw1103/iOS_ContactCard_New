@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SQLiteCRUD.xcodeproj">
+      location = "group:/Users/thomaswoerdeman/Documents/iOS_ContactCard_New/ContactCardApp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

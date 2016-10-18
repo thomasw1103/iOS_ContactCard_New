@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Alamofire
 
 class PersonTableTableViewController: UITableViewController {
     var persons : [Person] = []
+    
     @IBAction func refresh(_ sender: UIRefreshControl) {
         
         // Connect to db
@@ -54,12 +56,29 @@ class PersonTableTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "nameCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "nameCell", for: indexPath) as! PersonTableViewCell
 
         // Configure the cell...
         persons = DataBaseHelper.sharedInstance.read()
-        cell.textLabel?.text = persons[indexPath.row].firstName! + " " + persons[indexPath.row].lastName!;
-
+        cell.firstNameLabel?.text = persons[indexPath.row].firstName;
+        cell.lastNameLabel?.text = persons[indexPath.row].lastName;
+        
+       let imageUrl : String = persons[indexPath.row].imageURL!
+       Alamofire.request(imageUrl, method: .get).responseData { (response: DataResponse<Data>) in
+            switch(response.result) {
+                
+            case .success(_):
+                let image = UIImage(data: response.result.value!)
+                cell.personImageView.image = image
+                print("succes")
+                break;
+                
+            case .failure(_):
+                print("fail")
+                break;
+            }
+       }
+        
         return cell
     }
     

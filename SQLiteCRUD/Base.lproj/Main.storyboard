@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,28 +11,57 @@
         <scene sceneID="dCw-N2-Q9c">
             <objects>
                 <tableViewController id="Dec-30-AZI" customClass="PersonTableTableViewController" customModule="SQLiteCRUD" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" id="vtK-6C-d38">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="132" sectionHeaderHeight="28" sectionFooterHeight="28" id="vtK-6C-d38">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameCell" textLabel="vrV-z3-F8b" rowHeight="49" style="IBUITableViewCellStyleDefault" id="8w9-Uw-14u">
-                                <rect key="frame" x="0.0" y="92" width="375" height="49"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameCell" rowHeight="132" id="8w9-Uw-14u" customClass="PersonTableViewCell" customModule="SQLiteCRUD" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="132"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8w9-Uw-14u" id="Ikb-Lu-XeL">
-                                    <frame key="frameInset" width="375" height="48"/>
+                                    <frame key="frameInset" width="375" height="132"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vrV-z3-F8b">
-                                            <frame key="frameInset" minX="15" width="345" height="48"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V31-CN-cDz">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="PVl-Ls-Pss"/>
+                                                <constraint firstAttribute="height" constant="100" id="p4o-uT-2OA"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec5-Yg-4st">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="lai-88-mZ0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW6-nO-crs">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="jGk-KM-oW2"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ec5-Yg-4st" firstAttribute="top" secondItem="gW6-nO-crs" secondAttribute="bottom" constant="8" id="DWJ-OZ-wSm"/>
+                                        <constraint firstItem="gW6-nO-crs" firstAttribute="top" secondItem="Ikb-Lu-XeL" secondAttribute="topMargin" constant="2" id="GiU-8T-aiB"/>
+                                        <constraint firstItem="V31-CN-cDz" firstAttribute="leading" secondItem="Ikb-Lu-XeL" secondAttribute="leading" constant="5" id="H39-Qd-5qY"/>
+                                        <constraint firstItem="ec5-Yg-4st" firstAttribute="leading" secondItem="V31-CN-cDz" secondAttribute="trailing" constant="5" id="RCU-E5-TPL"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gW6-nO-crs" secondAttribute="trailing" constant="5" id="SN0-OW-6WR"/>
+                                        <constraint firstItem="V31-CN-cDz" firstAttribute="top" secondItem="Ikb-Lu-XeL" secondAttribute="top" constant="5" id="Tgv-nY-60R"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ec5-Yg-4st" secondAttribute="trailing" constant="5" id="cmr-2R-dwl"/>
+                                        <constraint firstItem="gW6-nO-crs" firstAttribute="leading" secondItem="V31-CN-cDz" secondAttribute="trailing" constant="5" id="pX9-23-JSb"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="firstNameLabel" destination="gW6-nO-crs" id="b1l-aX-Uzb"/>
+                                    <outlet property="imageView" destination="V31-CN-cDz" id="9t1-JI-7jp"/>
+                                    <outlet property="lastNameLabel" destination="ec5-Yg-4st" id="aSS-qS-VZh"/>
+                                    <outlet property="personImageView" destination="V31-CN-cDz" id="qVW-HJ-HcZ"/>
                                     <segue destination="HUI-Kb-QdS" kind="show" identifier="detailSegue" id="SXp-UV-hru"/>
                                 </connections>
                             </tableViewCell>
@@ -123,7 +153,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0bw-tD-mBH" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dCx-vh-ZZB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dCx-vh-ZZB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

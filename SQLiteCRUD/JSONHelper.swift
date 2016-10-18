@@ -22,7 +22,6 @@ class JSONHelper {
         let person : Person? = Person()
         
         let databaseHelperInstance = DataBaseHelper.sharedInstance
-        
         let parameters = ["results" : "5"]
         Alamofire.request(url, method: .get, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
             

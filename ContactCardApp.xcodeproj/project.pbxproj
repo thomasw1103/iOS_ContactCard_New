@@ -10,6 +10,7 @@
 		B6E758D31DB37045003CC163 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E758D21DB37044003CC163 /* DetailViewController.swift */; };
 		B6E758D81DB37423003CC163 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E758D71DB37423003CC163 /* Person.swift */; };
 		B769114D1DB4D91E00FBA8BC /* New-York-City-Skyline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B769114C1DB4D91E00FBA8BC /* New-York-City-Skyline.jpg */; };
+		B769114F1DB5127800FBA8BC /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B769114E1DB5127800FBA8BC /* PersonTableViewCell.swift */; };
 		B7B34DF71DB4B485009354B4 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B34DF61DB4B485009354B4 /* JSONHelper.swift */; };
 		C75699B61DA67714003AE7FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75699B51DA67714003AE7FC /* AppDelegate.swift */; };
 		C75699BB1DA67714003AE7FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75699B91DA67714003AE7FC /* Main.storyboard */; };
@@ -28,8 +29,9 @@
 		B6E758D21DB37044003CC163 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B6E758D71DB37423003CC163 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B769114C1DB4D91E00FBA8BC /* New-York-City-Skyline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "New-York-City-Skyline.jpg"; path = "../../../Desktop/New-York-City-Skyline.jpg"; sourceTree = "<group>"; };
+		B769114E1DB5127800FBA8BC /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		B7B34DF61DB4B485009354B4 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
-		C75699B21DA67714003AE7FC /* SQLiteCRUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteCRUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75699B21DA67714003AE7FC /* ContactCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75699B51DA67714003AE7FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C75699BA1DA67714003AE7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C75699BC1DA67714003AE7FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				C75699D41DA689F5003AE7FC /* PersonTableTableViewController.swift */,
 				B6E758D21DB37044003CC163 /* DetailViewController.swift */,
+				B769114E1DB5127800FBA8BC /* PersonTableViewCell.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -94,7 +97,7 @@
 		C75699A91DA67714003AE7FC = {
 			isa = PBXGroup;
 			children = (
-				C75699B41DA67714003AE7FC /* SQLiteCRUD */,
+				C75699B41DA67714003AE7FC /* ContactCardApp */,
 				C75699B31DA67714003AE7FC /* Products */,
 				C75699C71DA67820003AE7FC /* Frameworks */,
 				522E5ABDD214D3196E887FE5 /* Pods */,
@@ -104,16 +107,16 @@
 		C75699B31DA67714003AE7FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C75699B21DA67714003AE7FC /* SQLiteCRUD.app */,
+				C75699B21DA67714003AE7FC /* ContactCardApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C75699B41DA67714003AE7FC /* SQLiteCRUD */ = {
+		C75699B41DA67714003AE7FC /* ContactCardApp */ = {
 			isa = PBXGroup;
 			children = (
-				B769114C1DB4D91E00FBA8BC /* New-York-City-Skyline.jpg */,
 				B6E758D61DB373FD003CC163 /* helpers */,
+				B769114C1DB4D91E00FBA8BC /* New-York-City-Skyline.jpg */,
 				B6E758D51DB373E3003CC163 /* controllers */,
 				B6E758D41DB373D6003CC163 /* models */,
 				C75699D11DA67FE8003AE7FC /* contact.sqlite */,
@@ -124,6 +127,7 @@
 				C75699C11DA67714003AE7FC /* Info.plist */,
 				C75699CC1DA67A02003AE7FC /* Bridging-Header.h */,
 			);
+			name = ContactCardApp;
 			path = SQLiteCRUD;
 			sourceTree = "<group>";
 		};
@@ -139,9 +143,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C75699B11DA67714003AE7FC /* SQLiteCRUD */ = {
+		C75699B11DA67714003AE7FC /* ContactCardApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C75699C41DA67714003AE7FC /* Build configuration list for PBXNativeTarget "SQLiteCRUD" */;
+			buildConfigurationList = C75699C41DA67714003AE7FC /* Build configuration list for PBXNativeTarget "ContactCardApp" */;
 			buildPhases = (
 				BD6F22DC56E6B3C9FFD80D5E /* [CP] Check Pods Manifest.lock */,
 				C75699AE1DA67714003AE7FC /* Sources */,
@@ -154,9 +158,9 @@
 			);
 			dependencies = (
 			);
-			name = SQLiteCRUD;
+			name = ContactCardApp;
 			productName = SQLiteCRUD;
-			productReference = C75699B21DA67714003AE7FC /* SQLiteCRUD.app */;
+			productReference = C75699B21DA67714003AE7FC /* ContactCardApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -176,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C75699AD1DA67714003AE7FC /* Build configuration list for PBXProject "SQLiteCRUD" */;
+			buildConfigurationList = C75699AD1DA67714003AE7FC /* Build configuration list for PBXProject "ContactCardApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -189,7 +193,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C75699B11DA67714003AE7FC /* SQLiteCRUD */,
+				C75699B11DA67714003AE7FC /* ContactCardApp */,
 			);
 		};
 /* End PBXProject section */
@@ -267,6 +271,7 @@
 				C75699D51DA689F5003AE7FC /* PersonTableTableViewController.swift in Sources */,
 				B7B34DF71DB4B485009354B4 /* JSONHelper.swift in Sources */,
 				C75699B61DA67714003AE7FC /* AppDelegate.swift in Sources */,
+				B769114F1DB5127800FBA8BC /* PersonTableViewCell.swift in Sources */,
 				B6E758D31DB37045003CC163 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,7 +428,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C75699AD1DA67714003AE7FC /* Build configuration list for PBXProject "SQLiteCRUD" */ = {
+		C75699AD1DA67714003AE7FC /* Build configuration list for PBXProject "ContactCardApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C75699C21DA67714003AE7FC /* Debug */,
@@ -432,7 +437,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C75699C41DA67714003AE7FC /* Build configuration list for PBXNativeTarget "SQLiteCRUD" */ = {
+		C75699C41DA67714003AE7FC /* Build configuration list for PBXNativeTarget "ContactCardApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C75699C51DA67714003AE7FC /* Debug */,
